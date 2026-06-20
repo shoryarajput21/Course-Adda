@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CourseHub Pro - Digital Courses & Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Course<span>Hub</span></div>
+    <nav>
+      <a href="#courses">Products</a>
+      <a href="#trust">Trust</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#order">Order</a>
+    </nav>
+    <a class="nav-btn" href="https://wa.me/916396255254" target="_blank">WhatsApp</a>
+  </header>
+
+  <a class="whatsapp-float" href="https://wa.me/916396255254" target="_blank">💬 Contact us on WhatsApp<br><b>6396255254</b></a>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="badge">🔥 Student Price Offer</p>
+      <h1>Premium Digital Courses & Coding Notes</h1>
+      <p class="subtext">Product image par click karo: demo preview, full details aur Buy Now option open hoga.</p>
+      <div class="hero-actions">
+        <a href="#courses" class="primary-btn">Explore Products</a>
+        <button class="secondary-btn" onclick="openFirstDemo()">Watch Demo</button>
+      </div>
+      <div class="stats">
+        <div><b>11</b><span>Products</span></div>
+        <div><b>₹99+</b><span>Starting Price</span></div>
+        <div><b>24hr</b><span>Delivery</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Best Combo</h3>
+      <h2>All 3 Courses Combo</h2>
+      <p>Web Development + DSA + AI/ML</p>
+      <h1>₹650</h1>
+      <button onclick="openDetails(6)">View Details</button>
+    </div>
+  </section>
+
+  <section id="courses" class="section">
+    <div class="section-head">
+      <p>Click Any Product</p>
+      <h2>Courses, Combo & Notes</h2>
+    </div>
+
+    <!--
+      PRODUCT IMAGE SECTION
+      Image change karne ke liye sirf img src change karo.
+      Example: images/webdev.jpg ko apni image file name se replace karo.
+      Price/details/demo bhi yahi se edit kar sakte ho.
+    -->
+    <div class="course-grid" id="courseGrid">
+
+      <div class="course-card product-card"
+        data-name="Web Development Course"
+        data-demo-url="https://drive.google.com/drive/folders/1uu_L-5_6cNlZBe5t4RpKv91P1DNmnQtz?usp=drive_link"
+        data-price="350"
+        data-short="HTML, CSS, JavaScript, React, Node.js, Projects"
+        data-detail="Complete Web Development course: HTML, CSS, JavaScript, React, Node.js, projects, hosting aur portfolio guidance."
+        data-demo="Add your Web Development demo video link here">
+        <img src="images/6.jpeg" alt="Web Development Course">
+        <div class="card-body">
+          <span class="tag">Digital Course</span>
+          <h3>Web Development Course</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js, Projects</p>
+          <div class="price">₹350</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="course-card product-card"
+        data-name="Web Development Course"
+        data-demo-url="https://drive.google.com/drive/folders/1Mj_Ux8OR9SrMGgr5B7iDYX24iP35rOey?usp=drive_link"
+        data-price="350"
+        data-short="HTML, CSS, JavaScript, React, Node.js, Projects"
+        data-detail="Complete Web Development course: HTML, CSS, JavaScript, React, Node.js, projects, hosting aur portfolio guidance."
+        data-demo="Add your Web Development demo video link here">
+        <img src="images/13.jpeg" alt="Web Development Course">
+        <div class="card-body">
+          <span class="tag">Digital Course</span>
+          <h3>Web Development Course</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js, Projects</p>
+          <div class="price">₹350</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="course-card product-card"
+        data-name="Web Development Course"
+        data-demo-url="https://drive.google.com/drive/folders/1WTyQJDe9LqcE8iQbe0Kqqr9AmOmUYR0D?usp=drive_link"
+        data-price="350"
+        data-short="HTML, CSS, JavaScript, React, Node.js, Projects"
+        data-detail="Complete Web Development course: HTML, CSS, JavaScript, React, Node.js, projects, hosting aur portfolio guidance."
+        data-demo="Add your Web Development demo video link here">
+        <img src="images/14.jpeg" alt="Web Development Course">
+        <div class="card-body">
+          <span class="tag">Digital Course</span>
+          <h3>Web Development Course</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js, Projects</p>
+          <div class="price">₹350</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="course-card product-card"
+        data-name=" Data Science"
+        data-demo-url="https://drive.google.com/drive/folders/1uu_L-5_6cNlZBe5t4RpKv91P1DNmnQtz?usp=drive_link    "
+        data-price="350"
+        data-short="HTML, CSS, JavaScript, React, Node.js, Projects"
+        data-detail="Complete Web Development course: HTML, CSS, JavaScript, React, Node.js, projects, hosting aur portfolio guidance."
+        data-demo="Add your Web Development demo video link here">
+        <img src="images/15.jpeg" alt="Web Development Course">
+        <div class="card-body">
+          <span class="tag">Digital Course</span>
+          <h3>Web Development Course</h3>
+          <p>HTML, CSS, JavaScript, React, Node.js, Projects</p>
+          <div class="price">₹350</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="course-card product-card"
+        data-name="DSA Course"
+        data-demo-url="https://drive.google.com/drive/folders/1xru9BRJg7aHSH5BT4quWRvT2oAkO6-pk?usp=drive_link"
+        data-price="350"
+        data-short="Data Structures, Algorithms, Interview Practice"
+        data-detail="DSA course for coding interviews: arrays, strings, linked list, stack, queue, trees, graphs, sorting, searching aur practice questions."
+        data-demo="Add your DSA demo video link here">
+        <img src="images/3.jpeg" alt="DSA Course">
+        <div class="card-body">
+          <span class="tag">Digital Course</span>
+          <h3>DSA Course</h3>
+          <p>Data Structures, Algorithms, Interview Practice</p>
+          <div class="price">₹350</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="AI/ML Course"
+        data-demo-url="https://drive.google.com/drive/folders/1u4NC3DRHkKM_BZ_N8kTNn0mTvV5kKc2i?usp=drive_link"
+        data-price="450"
+        data-short="Python, ML Basics, Models, Mini Projects"
+        data-detail="Beginner friendly AI/ML course: Python basics, data cleaning, machine learning models, mini projects and roadmap."
+        data-demo="Add your AI/ML demo video link here">
+        <img src="images/5.jpeg" alt="AI/ML Course">
+        <div class="card-body">
+          <span class="tag">Digital Course</span>
+          <h3>AI/ML Course</h3>
+          <p>Python, ML Basics, Models, Mini Projects</p>
+          <div class="price">₹450</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="Web Development + DSA Combo"
+        data-demo-url="https://drive.google.com/drive/folders/1xru9BRJg7aHSH5BT4quWRvT2oAkO6-pk?usp=drive_link"
+        data-price="500"
+        data-short="2-course combo at student price"
+        data-detail="Web Development + DSA combo: website building skills + interview preparation together."
+        data-demo="Add combo demo link here">
+        <img src="images/4.jpeg" alt="Web Development + DSA Combo">
+        <div class="card-body">
+          <span class="tag">Combo Offer</span>
+          <h3>Web Development + DSA Combo</h3>
+          <p>2-course combo at student price</p>
+          <div class="price">₹500</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="Web Development + AI/ML Combo"
+        data-demo-url="https://drive.google.com/drive/folders/1uu_L-5_6cNlZBe5t4RpKv91P1DNmnQtz?usp=drive_link"
+        data-price="500"
+        data-short="2-course combo at student price"
+        data-detail="Web Development + AI/ML combo: build websites and learn AI/ML basics with projects."
+        data-demo="Add combo demo link here">
+        <img src="images/7.png" alt="Web Development + AI/ML Combo">
+        <div class="card-body">
+          <span class="tag">Combo Offer</span>
+          <h3>Web Development + AI/ML Combo</h3>
+          <p>2-course combo at student price</p>
+          <div class="price">₹500</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="DSA + AI/ML Combo"
+        data-demo-url="https://drive.google.com/drive/folders/1u4NC3DRHkKM_BZ_N8kTNn0mTvV5kKc2i?usp=drive_link"
+        data-price="500"
+        data-short="2-course combo at student price"
+        data-detail="DSA + AI/ML combo: coding logic, interview prep, Python, ML basics and mini projects."
+        data-demo="Add combo demo link here">
+        <img src="images/8.png" alt="DSA + AI/ML Combo">
+        <div class="card-body">
+          <span class="tag">Combo Offer</span>
+          <h3>DSA + AI/ML Combo</h3>
+          <p>2-course combo at student price</p>
+          <div class="price">₹500</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="All 3 Courses Combo"
+        data-demo-url="https://drive.google.com/drive/folders/1u4NC3DRHkKM_BZ_N8kTNn0mTvV5kKc2i?usp=drive_link"
+        data-price="650"
+        data-short="Web Dev + DSA + AI/ML"
+        data-detail="Best value combo: Web Development, DSA, AI/ML with bonus material and support."
+        data-demo="Add all-courses demo link here">
+        <img src="images/9.png" alt="All 3 Courses Combo">
+        <div class="card-body">
+          <span class="tag">Best Combo</span>
+          <h3>All 3 Courses Combo</h3>
+          <p>Web Dev + DSA + AI/ML</p>
+          <div class="price">₹650</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="All Coding Notes Bundle"
+        data-demo-url="https://drive.google.com/drive/folders/PASTE_NOTES_SAMPLE_LINK"
+        data-price="99"
+        data-short="HTML, CSS, JS, React, SQL, DSA, Java Notes"
+        data-detail="Complete coding notes bundle in PDF: HTML, CSS, JavaScript, React, SQL, DSA, Java and Python revision notes."
+        data-demo="Add notes sample PDF link here">
+        <img src="images/10.png" alt="All Coding Notes Bundle">
+        <div class="card-body">
+          <span class="tag">Notes Bundle</span>
+          <h3>All Coding Notes Bundle</h3>
+          <p>HTML, CSS, JS, React, SQL, DSA, Java Notes</p>
+          <div class="price">₹99</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card product-card"
+        data-name="AI Generated Reels Bundle"
+        data-demo-url="https://drive.google.com/drive/folders/PASTE_REELS_DEMO_LINK"
+        data-price="299"
+        data-short="Ready-made reels bundle for content creators"
+        data-detail="AI-generated reels bundle for Instagram/YouTube Shorts. Ready to use/edit content package."
+        data-demo="Add reels sample/demo link here">
+        <img src="images/11.png" alt="AI Generated Reels Bundle">
+        <div class="card-body">
+          <span class="tag">Digital Product</span>
+          <h3>AI Generated Reels Bundle</h3>
+          <p>Ready-made reels bundle for content creators</p>
+          <div class="price">₹299</div>
+          <div class="card-actions">
+            <button class="demo-card-btn">View Demo</button>
+            <button class="buy-card-btn">Buy This</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="trust" class="section trust">
+    <div class="section-head">
+      <p>Trust Section</p>
+      <h2>Why Students Trust Us</h2>
+    </div>
+    <div class="trust-grid">
+      <div>✅ Demo/preview before payment</div>
+      <div>✅ Payment screenshot verification</div>
+      <div>✅ Gmail + WhatsApp delivery</div>
+      <div>✅ Contact support: 6396255254</div>
+    </div>
+  </section>
+
+
+  <section id="reviews" class="section reviews-section">
+    <div class="section-head">
+      <p>Student Chat Proof</p>
+      <h2>Real Reviews & Delivery Proof</h2>
+    </div>
+    <div class="review-grid">
+      <div class="review-card"><img src="images/y1.jpeg" alt="Student WhatsApp review 1"><p>“Payment ke baad course link mil gaya. Good support.”</p></div>
+      <div class="review-card"><img src="images/y2.jpeg" alt="Student WhatsApp review 2"><p>“Web Dev + DSA combo helpful hai. Demo dekh ke buy kiya.”</p></div>
+      <div class="review-card"><img src="images/y3.jpeg" alt="Student WhatsApp review 3"><p>“Notes bundle revision ke liye best hai.”</p></div>
+      <div class="review-card"><img src="images/y4.jpeg" alt="Student WhatsApp review 4"><p>“AI/ML course beginner friendly laga.”</p></div>
+    </div>
+    
+  </section>
+
+  <section id="order" class="section order-section">
+    <div class="section-head">
+      <p>Simple Order Process</p>
+      <h2>Fill Details & Upload Payment Screenshot</h2>
+    </div>
+
+    <div class="order-box">
+      <form id="orderForm">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label>Gmail ID</label>
+        <input type="email" id="email" placeholder="example@gmail.com" required />
+
+        <label>Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="Enter mobile number" required />
+
+        <label>Select Product</label>
+        <select id="product" required>
+          <option value="">Select product</option>
+        </select>
+
+        <label>Upload Payment Screenshot</label>
+        <input type="file" id="screenshot" accept="image/*" required />
+        <img id="preview" alt="Payment Screenshot Preview" />
+
+        <button type="button" class="pay-btn" onclick="openPayment()">Show Amount QR & Pay</button>
+        <button type="submit" class="submit-btn">Submit Order on WhatsApp</button>
+      </form>
+
+      <div class="payment-card">
+        <h3>Scan & Pay</h3>
+        <img src="images/qr.png" class="side-qr" alt="Payment QR" />
+        <p><b>WhatsApp:</b> 6396255254</p>
+        <ol>
+          <li>Select product.</li>
+          <li>Click “Show Amount QR & Pay”.</li>
+          <li>Scan QR and pay.</li>
+          <li>Upload screenshot.</li>
+          <li>Submit order on WhatsApp.</li>
+        </ol>
+        <p class="warning">Payment verify hone ke baad product Gmail ya WhatsApp par deliver hoga.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="detailModal">
+    <div class="modal-content detail-content">
+      <button class="close" onclick="closeDetails()">×</button>
+      <img id="detailImg" class="detail-img" alt="Product image" />
+      <div class="detail-text">
+        <h2 id="detailTitle"></h2>
+        <p id="detailDesc"></p>
+        <h3 id="detailPrice"></h3>
+        <div class="demo-box">
+          <b>Demo Video / Preview:</b>
+          <p id="detailDemo"></p>
+          <a href="#" target="_blank" class="demo-link-btn" id="detailDemoBtn">▶ View Demo</a>
+          <small>Yaha apna Google Drive / YouTube demo link replace kar sakte ho.</small>
+        </div>
+        <button class="submit-btn" id="detailBuy">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="paymentModal">
+    <div class="modal-content">
+      <button class="close" onclick="closePayment()">×</button>
+      <h2>Scan & Pay</h2>
+      <p id="payAmount">Amount: ₹0</p>
+      <img id="qrImage" src="images/qr.png" class="qr" alt="Amount Payment QR" />
+      <p class="small">UPI: shauryarajput59@upi</p>
+    </div>
+  </div>
+
+  <footer>
+    <h2>CourseHub</h2>
+    <p>Digital courses and notes for students. Contact us on WhatsApp: 6396255254</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
